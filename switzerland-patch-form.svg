@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/200/svg">
+  <rect width="400" height="500" fill="#9ecff4"/>
+  <path d="M 0,0
+           L 400,0
+           L 400,400
+           L 200,500
+           L 0,400
+           Z" 
+        fill="#9ecff4"/>
+</svg>
