@@ -749,6 +749,8 @@ img {
     word-break: normal;
     overflow-wrap: normal;
     max-width: none;
+    text-shadow: 0 3px 12px rgba(0,0,0,0.60),
+      0 0 18px rgba(0,0,0,0.15);
   }
 
   .subtitle {
@@ -757,6 +759,8 @@ img {
     text-align: right;
     max-width: 90%;
     align-self: flex-end;
+    text-shadow: 0 0 3px 12px rgba(0,0,0,0.60),
+      0 0 18px rgba(0,0,0,0.15);
   }
 
   .location {
@@ -766,6 +770,8 @@ img {
     text-align: right;
     align-self: flex-end;
     max-width: none;
+    text-shadow: 0 0 3px 12px rgba(0,0,0,0.60),
+      0 0 18px rgba(0,0,0,0.15);
   }
 
   .intro-grid,
