@@ -132,16 +132,14 @@ img {
 
 .hero-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 31%;
+  right: 80px;
+  transform: translateY(-31%);
   z-index: 2;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
+  align-items: flex-end;
+  text-align: right;
 }
 
 .subtitle {
@@ -153,6 +151,7 @@ img {
   transform: translateY(45px);
   animation: heroTextUp 1s ease forwards;
   animation-delay: 1.2s;
+  text-align: right;
   text-shadow:
     0 3px 12px rgba(0,0,0,0.55),
     0 0 12px rgba(0,0,0,0.1);
@@ -160,10 +159,10 @@ img {
 
 .hero h1 {
   font-family: Georgia, serif;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: right;
   order: 1;
   opacity: 0;
   transform: translateY(55px);
@@ -173,17 +172,14 @@ img {
     0 3px 12px rgba(0,0,0,0.55),
     0 0 18px rgba(0,0,0,0.12);
 }
+
 .location {
-  position: absolute;
-  bottom: 32px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: fit-content;
+  margin-top: 6px;
+  white-space: nowrap;
   font-family: Georgia, serif;
-  font-size: 1.5rem;
-  text-align: center;
-  z-index: 3;
+  font-size: 1.3rem;
+  text-align: right;
+  align-self: flex-end;
   opacity: 0;
   animation: heroTextUp 1s ease forwards;
   animation-delay: 1.6s;
@@ -659,12 +655,15 @@ img {
   }
 
   .hero h1 {
-    font-size: 3.4rem;
+    font-size: 3rem;
   }
 
-  .subtitle,
-  .location {
+  .subtitle {
     font-size: 1.4rem;
+  }
+
+  .location {
+    font-size: 1.1rem;
   }
 
   .double-plan-gallery {
@@ -703,17 +702,18 @@ img {
 
   .hero-content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 100%;
-    padding: 0 6px;
+    top: 30%;
+    right: 18px;
+    left: auto;
+    transform: translateY(-36%);
+    width: auto;
+    max-width: calc(100% - 36px);
+    padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    text-align: center;
+    text-align: right;
   }
 
   .menu {
@@ -741,31 +741,30 @@ img {
   }
 
   .hero h1 {
-    font-size: 2.0rem;
-    line-height: 1.08;
+    font-size: 2.15rem;
+    line-height: 1.05;
     margin-bottom: 12px;
+    text-align: right;
+    white-space: nowrap;
     word-break: normal;
-    overflow-wrap: break-word;
-    max-width: 92%;
+    overflow-wrap: normal;
+    max-width: none;
   }
 
   .subtitle {
     font-size: 0.95rem;
     line-height: 1.3;
-    text-align: center;
+    text-align: right;
     max-width: 90%;
+    align-self: flex-end;
   }
 
   .location {
-    position: absolute;
-    bottom: 28px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: fit-content;
+    white-space: nowrap;
     font-size: 0.95rem;
     line-height: 1.3;
-    text-align: center;
+    text-align: right;
+    align-self: flex-end;
     max-width: none;
   }
 
